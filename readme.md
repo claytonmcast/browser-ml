@@ -1,7 +1,7 @@
-# 🧠 Thesis ML Web App
+# 🧠 Browser ML Web App
 
-A browser-based machine learning demo built for my Master's thesis:  
-**"Exploring the Feasibility of Browser-Based Machine Learning: Challenges and Dataset Limitations"**
+A browser-based machine learning demo:  
+**"Client-Side Machine Learning in the Browser: Evaluating Feasibility, Performance, and Privacy"**
 
 This project demonstrates training ML models like linear regression and neural networks **directly in the browser** using WebAssembly, TensorFlow.js, and Python APIs. It evaluates the feasibility of in-browser ML by testing dataset size limitations, model complexity, and performance.
 
@@ -23,7 +23,7 @@ This project demonstrates training ML models like linear regression and neural n
 
 > 🔓 Make sure to extract `mnist_train_images.rar` at:
 ```
-thesis-ml/neural_network/datasets/mnist_train_images.rar
+browser-ml/neural_network/datasets/mnist_train_images.rar
 ```
 
 ---
@@ -65,7 +65,7 @@ python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU')
 ### 4. Run the Server
 
 ```bash
-cd thesis-ml
+cd browser-ml
 python server.py
 ```
 
@@ -74,7 +74,7 @@ python server.py
 ## 📁 Project Structure
 
 ```
-thesis-ml/
+browser-ml/
 │
 ├── assets/
 │   ├── alpine_interface.js                         # Alpine.js grid logic
@@ -166,4 +166,4 @@ wasm-pack build --target web
 
 ## 🎓 Academic Context
 
-Built for my Master's thesis at Malta College of Arts, Science & Technology
+Built at Malta College of Arts, Science & Technology
